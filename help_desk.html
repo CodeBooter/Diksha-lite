@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIKSHA home</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="ppn_style.css-->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_body{
+            background: rgb(138, 126, 181);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .box {
+            width: 100%;
+            
+            margin: 25px auto 25px auto;
+            background: rgb(145, 206, 199);
+            border-radius: 7px;
+            box-shadow: 1px 2px 4px rgba(201, 152, 104, 0.3);
+        }
+
+        .box .heading {
+            background-color: rgb(7, 43, 65);
+            border-radius: 7px 7px 0px 0px;
+            padding: 10px;
+            text-align: center;
+            font-family: "Rubik";
+            color: white;
+            font-size: 30px;
+        }
+
+        .faqs {
+            padding: 10px 20px;
+        }
+
+        ::-webkit-details-marker {
+            float: right;
+            margin-top: 30px;
+        }
+
+        details {
+            background: rgb(58, 136, 142);
+            padding: 10px;
+            border-radius: 7px;
+            margin-top: 30px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: rgb(56, 26, 4);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        details summary {
+            outline: none;
+        }
+
+        @media (max-width:942) {
+            body {
+                overflow: auto;
+            }
+
+            .box {
+                width: 90%;
+                margin: 5px auto;
+                background: rgb(145, 206, 199);
+                border-radius: 7px;
+                box-shadow: 1px 2px 4px rgba(201, 152, 104, 0.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i></i>
+                <div class="logo_name">DIKSHA</div>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav_links">
+            <li>
+                <a href="/home.html">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="link_name">Dashboard</span></a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <i class="bx bx-user"></i>
+                    <span class="link_name">Profile</span></a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="/courses.html">
+                    <i class="bx bx-book-reader"></i>
+                    <span class="link_name">Courses</span></a>
+                <span class="tooltip">Courses</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-bookmark-plus"></i>
+                    <span class="link_name">Saved Videos</span></a>
+                <span class="tooltip">Saved Videos</span>
+            </li>
+            <li>
+                <a href="/study.html">
+                    <i class="bx bx-book"></i>
+                    <span class="link_name">Study material</span></a>
+                <span class="tooltip">Study material</span>
+            </li>
+            <li>
+                <a href="/leaderboard.html">
+                    <i class="bx bx-bar-chart-alt-2"></i>
+                    <span class="link_name">Leader Board</span></a>
+                <span class="tooltip">Leader Board</span>
+            </li>
+            <li>
+                <a href="/quiz/quiz.html">
+                  
+                  <i class='bx bx-brain'></i>
+                  <span class="link_name">Quiz</span></a>
+                <span class="tooltip">Quiz</span>
+              </li>
+            <li>
+                <a href="/help_desk.html">
+                    <i class="bx bx-help-circle"></i>
+                    <span class="link_name">Help desk</span></a>
+                <span class="tooltip">Help desk</span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="bx bx-log-out-circle"></i>
+                    <span class="link_name">Log out</span></a>
+                <span class="tooltip">Log out</span>
+            </li>
+        </ul>
+    </div>
+    <div class="home_content">
+        <nav class="logo_next"><img src="/newdikshaevidyalogo.ico" alt="">
+            <div class="Searchbar"><input type="Search" placeholder="Search here....">
+                <span class="fa fa-search"></span>
+            </div>
+        </nav>
+
+        <div class="main_body">
+            <div class="box">
+                <p class="heading">FAQs</p>
+                <div class="faqs">
+                    <details>
+                        <summary> 1. What is DIKSHA?</summary>
+                        <p class="text">DIKSHA (Digital Infrastructure for knowledge Sharing) is a national platform for
+                            school education,an initiative of National Council for Education Research and Training
+                            (NCERT), under the aegis of the Ministry of Education(MoE),GoI. Launched in 2007 by
+                            Honourable Vice Precident of India - Shri M. Venkaiah Naidu,DIKSHA has adopted by almost all
+                            the States,Union Territories,central autonomous bodies/boards including CBSE. </p>
+                    </details>
+                </div>
+                <div class="faqs">
+                    <details>
+                        <summary> 2. Does it charges any fee?</summary>
+                        <p class="text">NO! It is completely free to access</p>
+                    </details>
+                </div>
+                <div class="faqs">
+                    <details>
+                        <summary> 3. How can we access it ?</summary>
+                        <p class="text">We can access it through its' website(www.diksha.giv.in) or we can also access
+                            it on our mobile phones because DIKSHA platform offers engaging learning materails,relevant
+                            to the prescribed school curriculum to teachers,students and parents. </p>
+                    </details>
+                </div>
+                <div class="faqs">
+                    <details>
+                        <summary> 4. Why DIKSHA is built ?</summary>
+                        <p class="text">DIKSHA is built on open source technology, made in India and made for India,
+                            which incorporates internet scale technologies and enables several use-cases and solutions
+                            for teaching and learning. </p>
+                    </details>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <script>
+            // let profile_icon =document.querySelector("#profile_icon");
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            // profile_icon.onclick = function(){
+            //   alert("Profile");
+            // }
+            btn.onclick = function () {
+                sidebar.classList.toggle("active");
+            };
+        </script>
+</body>
+
+</html>
